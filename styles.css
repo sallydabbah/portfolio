@@ -1,0 +1,155 @@
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+}
+.wrapper h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.wrapper h2{
+  text-align: left;
+}
+.line{
+  height: 25px;
+  min-width: 800px;
+  margin: 0 auto 10px;
+  line-height: 25px;
+  font-size: 14px;
+  color:blue;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+.line:before{
+  content: '';
+  width:100%;
+  position: absolute;
+  left:0;
+  height: 25px;
+  top:0;
+  z-index: -2;
+  background: #f3f3f3;
+}
+.line:after{
+content: '';
+background: #5F9EA0;
+height: 25px;
+transition: 0.8s;
+display: block;
+width: 100%;
+animation: animate 1 2s;
+position: absolute;
+left:0;
+z-index: -1;
+}
+.line1:after{
+  max-width: 90%;
+}
+.line2:after{
+  max-width: 80%;
+}
+.line3:after{
+  max-width: 75%;
+}
+.line4:after{
+  max-width: 70%;
+}
+@keyframes animate{
+  0%{
+   width: 0;    
+  }
+  100%{
+    width: 100;    
+   }
+}
+
+.links{
+    display: grid;
+  grid-template-rows: auto auto;
+}
+.linkstitle{
+    margin: 40 40 20 0px;
+    text-align: left;
+    font-size: 30px;
+}
+.linksitems {
+    justify-content: center;
+    margin-top: 4%;
+  }
+.linkicon {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    margin-left: 7%;
+  }
+  .linksitems a {
+    width: 15px;
+    height: 15px;
+  }
+.sallysImg{
+    display: grid;
+  width: 50%;
+  justify-content: center;
+}
+.sallysImg img{
+    width: 570px;
+  height: 990px;
+  border-radius: 30%;
+  border-color: solid black;
+  margin-left: 30%;
+}
+.sallysImg p{
+    margin: 0;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 140%;
+    margin-top: 0%;
+    width: 100%;
+}
+
+#about{
+    margin-top: 50%;
+}
+ p{
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+body{
+    background-color: #f3f3f3;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  li:first-child{
+      font-style: oblique;
+      font-weight:900 ;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #4CAF50;
+  }
+  
